@@ -1,0 +1,11 @@
+﻿  Compiling game modules for hot reload
+  Performing 3 actions (4 in parallel)
+  WeaponBase.cpp
+C:\UnrealProject\FightMadang\Source\FightMadang\WeaponBase.cpp(23): warning C4996: 'USceneComponent::AttachTo': This function is deprecated, please use AttachToComponent instead. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
+  C:\Program Files\Epic Games\UE_4.19\Engine\Source\Runtime\Engine\Classes\Components/SceneComponent.h(641): note: 'USceneComponent::AttachTo' 선언을 참조하십시오.
+  [2/3] Link UE4Editor-FightMadang-1204.dll
+  [3/3] Link UE4Editor-FightMadang-1204.lib
+     C:\UnrealProject\FightMadang\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-FightMadang-1204.lib 라이브러리 및 C:\UnrealProject\FightMadang\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-FightMadang-1204.exp 개체를 생성하고 있습니다.
+     C:\UnrealProject\FightMadang\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-FightMadang-1204.suppressed.lib 라이브러리 및 C:\UnrealProject\FightMadang\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-FightMadang-1204.suppressed.exp 개체를 생성하고 있습니다.
+  Deploying FightMadangEditor Win64 Development...
+  Total build time: 12.48 seconds (Local executor: 10.82 seconds)
