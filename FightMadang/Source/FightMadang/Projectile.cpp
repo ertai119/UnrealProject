@@ -16,9 +16,14 @@ AProjectile::AProjectile()
 	ProjectileMovement->UpdatedComponent = ProjectileCollision;
 	ProjectileMovement->InitialSpeed = 3000.f;
 	ProjectileMovement->MaxSpeed = 3000.f;
-	ProjectileMovement->bRotationFollowVelocity = false;
+	ProjectileMovement->bRotationFollowsVelocity = false;
 
 	InitialLifeSpan = 3.f;
 
 }
 
+void AProjectile::OnOverlapBegin(
+	AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
+{
+
+}

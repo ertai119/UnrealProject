@@ -1,79 +1,76 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
+
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <ItemGroup>
-    <None Include="..\..\FightMadang.uproject" />
-    <Filter Include="Source">
-      <UniqueIdentifier>{05B76A0E-F6B6-4BE4-A5B2-340A9AC736A1}</UniqueIdentifier>
-    </Filter>
-    <None Include="..\..\Source\FightMadang.Target.cs">
-      <Filter>Source</Filter>
-    </None>
-    <None Include="..\..\Source\FightMadangEditor.Target.cs">
-      <Filter>Source</Filter>
-    </None>
-    <Filter Include="Config">
-      <UniqueIdentifier>{2F03D6ED-A93B-4546-8AA8-57D7EA3871BF}</UniqueIdentifier>
-    </Filter>
-    <None Include="..\..\Config\DefaultEditor.ini">
-      <Filter>Config</Filter>
-    </None>
-    <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
-      <Filter>Config</Filter>
-    </None>
-    <None Include="..\..\Config\DefaultEngine.ini">
-      <Filter>Config</Filter>
-    </None>
-    <None Include="..\..\Config\DefaultGame.ini">
-      <Filter>Config</Filter>
-    </None>
-    <None Include="..\..\Config\DefaultInput.ini">
-      <Filter>Config</Filter>
-    </None>
-    <Filter Include="Source\FightMadang">
-      <UniqueIdentifier>{464A6706-8319-4BB1-A9D2-F1907639680A}</UniqueIdentifier>
-    </Filter>
-    <None Include="..\..\Source\FightMadang\FightMadang.Build.cs">
-      <Filter>Source\FightMadang</Filter>
-    </None>
-    <ClCompile Include="..\..\Source\FightMadang\FightMadang.cpp">
-      <Filter>Source\FightMadang</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\FightMadang\FightMadang.h">
-      <Filter>Source\FightMadang</Filter>
-    </ClInclude>
-    <ClCompile Include="..\..\Source\FightMadang\FightMadangCharacter.cpp">
-      <Filter>Source\FightMadang</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\FightMadang\FightMadangCharacter.h">
-      <Filter>Source\FightMadang</Filter>
-    </ClInclude>
-    <ClCompile Include="..\..\Source\FightMadang\FightMadangGameMode.cpp">
-      <Filter>Source\FightMadang</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\FightMadang\FightMadangGameMode.h">
-      <Filter>Source\FightMadang</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="..\..\Source\FightMadang\WeaponBase.h">
-      <Filter>Source\FightMadang</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\FightMadang\PublicCharacter.h">
-      <Filter>Source\FightMadang</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\FightMadang\Projectile.h">
-      <Filter>Source\FightMadang</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="..\..\Source\FightMadang\WeaponBase.cpp">
-      <Filter>Source\FightMadang</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\FightMadang\PublicCharacter.cpp">
-      <Filter>Source\FightMadang</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\FightMadang\Projectile.cpp">
-      <Filter>Source\FightMadang</Filter>
-    </ClCompile>
-  </ItemGroup>
+	<ItemGroup>
+		<None Include="..\..\FightMadang.uproject" />
+		<Filter Include="Source">
+			<UniqueIdentifier>{82470A31-E576-467A-A534-EE6EA8289E05}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Source\FightMadang.Target.cs">
+			<Filter>Source</Filter>
+		</None >
+		<None Include="..\..\Source\FightMadangEditor.Target.cs">
+			<Filter>Source</Filter>
+		</None >
+		<Filter Include="Config">
+			<UniqueIdentifier>{DEA84293-47E2-4AEE-A4B5-5DEFFA52AC7A}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Config\DefaultEditor.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultEngine.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultGame.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultInput.ini">
+			<Filter>Config</Filter>
+		</None >
+		<Filter Include="Source\FightMadang">
+			<UniqueIdentifier>{CCC64B09-471D-4DD7-B63C-E570FE93FA8E}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Source\FightMadang\FightMadang.Build.cs">
+			<Filter>Source\FightMadang</Filter>
+		</None >
+		<ClCompile Include="..\..\Source\FightMadang\FightMadang.cpp">
+			<Filter>Source\FightMadang</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\FightMadang\FightMadang.h">
+			<Filter>Source\FightMadang</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\FightMadang\FightMadangCharacter.cpp">
+			<Filter>Source\FightMadang</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\FightMadang\FightMadangCharacter.h">
+			<Filter>Source\FightMadang</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\FightMadang\FightMadangGameMode.cpp">
+			<Filter>Source\FightMadang</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\FightMadang\FightMadangGameMode.h">
+			<Filter>Source\FightMadang</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\FightMadang\Projectile.cpp">
+			<Filter>Source\FightMadang</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\FightMadang\Projectile.h">
+			<Filter>Source\FightMadang</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\FightMadang\PublicCharacter.cpp">
+			<Filter>Source\FightMadang</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\FightMadang\PublicCharacter.h">
+			<Filter>Source\FightMadang</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\FightMadang\WeaponBase.cpp">
+			<Filter>Source\FightMadang</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\FightMadang\WeaponBase.h">
+			<Filter>Source\FightMadang</Filter>
+		</ClInclude >
+	</ItemGroup>
 </Project>

@@ -6,7 +6,7 @@
 #include "GameFramework/Actor.h"
 #include "Projectile.generated.h"
 
-clsss UProjectileMovementComponent;
+class UProjectileMovementComponent;
 class USphereComponent;
 
 UCLASS()
@@ -28,5 +28,5 @@ public:
 	void OnOverlapBegin(AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
 
 	FORCEINLINE USphereComponent* GetProjectileCollisition() const { return ProjectileCollision; }
-	FORCEINLINE UProjectilMovementComponent* GetProjectileMovement() const { return ProjectileMovement; }
+	FORCEINLINE UProjectileMovementComponent* GetProjectileMovement() const { return ProjectileMovement; }
 };
