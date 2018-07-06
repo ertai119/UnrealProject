@@ -61,12 +61,18 @@
     <ClInclude Include="..\..\Source\FightMadang\PublicCharacter.h">
       <Filter>Source\FightMadang</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Source\FightMadang\Projectile.h">
+      <Filter>Source\FightMadang</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\Source\FightMadang\WeaponBase.cpp">
       <Filter>Source\FightMadang</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\FightMadang\PublicCharacter.cpp">
+      <Filter>Source\FightMadang</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\FightMadang\Projectile.cpp">
       <Filter>Source\FightMadang</Filter>
     </ClCompile>
   </ItemGroup>

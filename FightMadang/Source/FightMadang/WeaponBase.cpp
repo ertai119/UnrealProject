@@ -19,7 +19,7 @@ AWeaponBase::AWeaponBase(const FObjectInitializer& ObjectInitilizer)
 	RootComponent = WeaponMesh;
 
 	WeaponCollision = CreateDefaultSubobject<USphereComponent>(TEXT("WeaponCollision"));
-	WeaponCollision->InitSphereRadius(30.f);
+	WeaponCollision->InitSphereRadius(15.f);
 	WeaponCollision->AttachTo(WeaponMesh, "Root");
 }
 

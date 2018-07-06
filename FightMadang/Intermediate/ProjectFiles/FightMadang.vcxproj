@@ -406,8 +406,10 @@
     <NMakeOutput>..\..\Binaries\HTML5\FightMadang-HTML5-Shipping.js</NMakeOutput>
   </PropertyGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\Source\FightMadang\Projectile.cpp" />
     <ClCompile Include="..\..\Source\FightMadang\PublicCharacter.cpp" />
     <ClCompile Include="..\..\Source\FightMadang\WeaponBase.cpp" />
+    <ClInclude Include="..\..\Source\FightMadang\Projectile.h" />
     <ClInclude Include="..\..\Source\FightMadang\PublicCharacter.h" />
     <ClInclude Include="..\..\Source\FightMadang\WeaponBase.h" />
     <None Include="..\..\FightMadang.uproject" />
