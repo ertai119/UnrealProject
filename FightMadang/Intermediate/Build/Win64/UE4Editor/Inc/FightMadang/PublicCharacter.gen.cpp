@@ -20,6 +20,7 @@ void EmptyLinkFunctionForGeneratedCodePublicCharacter() {}
 	ENGINE_API UClass* Z_Construct_UClass_UAnimMontage_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	FIGHTMADANG_API UClass* Z_Construct_UClass_AWeaponBase_NoRegister();
+	FIGHTMADANG_API UClass* Z_Construct_UClass_AProjectile_NoRegister();
 // End Cross Module References
 	void APublicCharacter::StaticRegisterNativesAPublicCharacter()
 	{
@@ -74,6 +75,13 @@ void EmptyLinkFunctionForGeneratedCodePublicCharacter() {}
 #endif
 			static const UE4CodeGen_Private::FNamePropertyParams NewProp_WeaponAttachPoint = { UE4CodeGen_Private::EPropertyClass::Name, "WeaponAttachPoint", RF_Public|RF_Transient|RF_MarkAsNative, 0x0020080000010001, 1, nullptr, STRUCT_OFFSET(APublicCharacter, WeaponAttachPoint), METADATA_PARAMS(NewProp_WeaponAttachPoint_MetaData, ARRAY_COUNT(NewProp_WeaponAttachPoint_MetaData)) };
 #if WITH_METADATA
+			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ProjectileClass_MetaData[] = {
+				{ "Category", "Projectile" },
+				{ "ModuleRelativePath", "PublicCharacter.h" },
+			};
+#endif
+			static const UE4CodeGen_Private::FClassPropertyParams NewProp_ProjectileClass = { UE4CodeGen_Private::EPropertyClass::Class, "ProjectileClass", RF_Public|RF_Transient|RF_MarkAsNative, 0x0014000000010001, 1, nullptr, STRUCT_OFFSET(APublicCharacter, ProjectileClass), Z_Construct_UClass_AProjectile_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(NewProp_ProjectileClass_MetaData, ARRAY_COUNT(NewProp_ProjectileClass_MetaData)) };
+#if WITH_METADATA
 			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Health_MetaData[] = {
 				{ "Category", "Health" },
 				{ "ModuleRelativePath", "PublicCharacter.h" },
@@ -86,6 +94,7 @@ void EmptyLinkFunctionForGeneratedCodePublicCharacter() {}
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_DefaultInventoryClasses,
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_DefaultInventoryClasses_Inner,
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_WeaponAttachPoint,
+				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_ProjectileClass,
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_Health,
 			};
 			static const FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -106,7 +115,7 @@ void EmptyLinkFunctionForGeneratedCodePublicCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(APublicCharacter, 1246433581);
+	IMPLEMENT_CLASS(APublicCharacter, 1152185510);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_APublicCharacter(Z_Construct_UClass_APublicCharacter, &APublicCharacter::StaticClass, TEXT("/Script/FightMadang"), TEXT("APublicCharacter"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(APublicCharacter);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

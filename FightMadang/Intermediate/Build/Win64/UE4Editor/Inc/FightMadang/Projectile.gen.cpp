@@ -36,6 +36,7 @@ void EmptyLinkFunctionForGeneratedCodeProjectile() {}
 	{
 		struct Projectile_eventOnOverlapBegin_Parms
 		{
+			UPrimitiveComponent* OverlappedComponent;
 			AActor* OtherActor;
 			UPrimitiveComponent* OtherComp;
 			int32 OtherBodyIndex;
@@ -61,12 +62,19 @@ void EmptyLinkFunctionForGeneratedCodeProjectile() {}
 #endif
 			static const UE4CodeGen_Private::FObjectPropertyParams NewProp_OtherComp = { UE4CodeGen_Private::EPropertyClass::Object, "OtherComp", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000080080, 1, nullptr, STRUCT_OFFSET(Projectile_eventOnOverlapBegin_Parms, OtherComp), Z_Construct_UClass_UPrimitiveComponent_NoRegister, METADATA_PARAMS(NewProp_OtherComp_MetaData, ARRAY_COUNT(NewProp_OtherComp_MetaData)) };
 			static const UE4CodeGen_Private::FObjectPropertyParams NewProp_OtherActor = { UE4CodeGen_Private::EPropertyClass::Object, "OtherActor", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000000080, 1, nullptr, STRUCT_OFFSET(Projectile_eventOnOverlapBegin_Parms, OtherActor), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
+			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_OverlappedComponent_MetaData[] = {
+				{ "EditInline", "true" },
+			};
+#endif
+			static const UE4CodeGen_Private::FObjectPropertyParams NewProp_OverlappedComponent = { UE4CodeGen_Private::EPropertyClass::Object, "OverlappedComponent", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000080080, 1, nullptr, STRUCT_OFFSET(Projectile_eventOnOverlapBegin_Parms, OverlappedComponent), Z_Construct_UClass_UPrimitiveComponent_NoRegister, METADATA_PARAMS(NewProp_OverlappedComponent_MetaData, ARRAY_COUNT(NewProp_OverlappedComponent_MetaData)) };
 			static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[] = {
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_SweepResult,
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_bFromSweep,
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_OtherBodyIndex,
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_OtherComp,
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_OtherActor,
+				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_OverlappedComponent,
 			};
 #if WITH_METADATA
 			static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
@@ -92,7 +100,7 @@ void EmptyLinkFunctionForGeneratedCodeProjectile() {}
 				(UObject* (*)())Z_Construct_UPackage__Script_FightMadang,
 			};
 			static const FClassFunctionLinkInfo FuncInfo[] = {
-				{ &Z_Construct_UFunction_AProjectile_OnOverlapBegin, "OnOverlapBegin" }, // 106159350
+				{ &Z_Construct_UFunction_AProjectile_OnOverlapBegin, "OnOverlapBegin" }, // 3548045053
 			};
 #if WITH_METADATA
 			static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
@@ -139,7 +147,7 @@ void EmptyLinkFunctionForGeneratedCodeProjectile() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AProjectile, 2990449041);
+	IMPLEMENT_CLASS(AProjectile, 3523801353);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AProjectile(Z_Construct_UClass_AProjectile, &AProjectile::StaticClass, TEXT("/Script/FightMadang"), TEXT("AProjectile"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AProjectile);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

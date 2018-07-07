@@ -7,6 +7,7 @@
 #include "PublicCharacter.generated.h"
 
 class AWeaponBase;
+class AProjectile;
 
 UCLASS()
 class FIGHTMADANG_API APublicCharacter : public ACharacter
@@ -30,7 +31,12 @@ public:
 	UPROPERTY(EditAnyWhere, BlueprintReadWrite, Category = Health)
 	float Health;
 
-	virtual float TakeDamage(float Damage, const FDamageEvent& DamageEvent, AController* EventInstigator, AActor* DamageCauser) override;
+	virtual float TakeDamage(float Damage, const FDamageEvent& DamageEvent
+		, AController* EventInstigator, AActor* DamageCauser) override;
+
+	UPROPERTY(EditDefaultsOnly, Category = Projectile)
+		TSubclassOf<AProjectile> ProjectileClass;
+
 protected:
 	UPROPERTY(EditDefaultsOnly, Category = Inventory)
 	FName WeaponAttachPoint;
@@ -58,4 +64,5 @@ protected:
 	virtual void Die(float KillingDamage, const FDamageEvent& DamageEvent, AController* Killer, AActor* DamageCauser);
 
 	void OnDieAnimationEnd();
+	void OnFire();
 };

@@ -5,6 +5,7 @@
 #include "TimerManager.h"
 #include "Components/CapsuleComponent.h"
 #include "GameFramework/CharacterMovementComponent.h"
+#include "Projectile.h"
 
 // Sets default values
 APublicCharacter::APublicCharacter()
@@ -104,6 +105,11 @@ void APublicCharacter::WeaponAttack()
 	{
 		CurrentWeapon->StartAttack();
 	}
+
+	if (CurrentWeapon == Inventory[1])
+	{
+		OnFire();
+	}
 }
 
 void APublicCharacter::OnHit(float DamageTaken, const FDamageEvent& DamageEvent, APawn* PawnInstigator, AActor* DamageCauser)
@@ -183,4 +189,19 @@ float APublicCharacter::TakeDamage(float Damage, const FDamageEvent& DamageEvent
 	}
 
 	return ActualDamage;
+}
+
+void APublicCharacter::OnFire()
+{
+	if (ProjectileClass != nullptr)
+	{
+		const FRotator SpawnRot = GetActorRotation();
+		const FVector SpawnPos = GetActorLocation() + SpawnRot.RotateVector(FVector(100.f, 30.f, 10.f));
+
+		UWorld* World = GetWorld();
+		if (World != nullptr)
+		{
+			World->SpawnActor<AProjectile>(ProjectileClass, SpawnPos, SpawnRot);
+		}
+	}
 }

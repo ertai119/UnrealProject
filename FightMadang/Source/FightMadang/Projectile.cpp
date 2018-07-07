@@ -12,7 +12,7 @@ AProjectile::AProjectile()
 	ProjectileCollision = CreateDefaultSubobject<USphereComponent>(TEXT("Sphere Comp"));
 	ProjectileCollision->InitSphereRadius(20.f);
 	ProjectileCollision->BodyInstance.SetCollisionProfileName("Projectile");
-	ProjectileCollision->OnComponentBeginOverlap.AddDynamic(this, AProjectile::OnOverlapBegin);
+	ProjectileCollision->OnComponentBeginOverlap.AddDynamic(this, &AProjectile::OnOverlapBegin);
 	RootComponent = ProjectileCollision;
 
 	ProjectileMovement = CreateDefaultSubobject<UProjectileMovementComponent>(TEXT("ProjetileComp"));
@@ -24,11 +24,10 @@ AProjectile::AProjectile()
 	InitialLifeSpan = 3.f;
 }
 
-void AProjectile::OnOverlapBegin(
-	AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex
-	, bool bFromSweep, const FHitResult& SweepResult)
+void AProjectile::OnOverlapBegin(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor
+	, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult &SweepResult)
 {
-	if (OtherActor && (OtherActor != this) && OtherComp)
+	if (OtherActor && (OtherActor != this) && OverlappedComponent)
 	{
 		GetWorld()->DestroyActor(this);
 

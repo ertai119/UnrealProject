@@ -8,8 +8,8 @@
 #include "ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-class AActor;
 class UPrimitiveComponent;
+class AActor;
 struct FHitResult;
 #ifdef FIGHTMADANG_Projectile_generated_h
 #error "Projectile.generated.h already included, missing '#pragma once' in Projectile.h"
@@ -20,6 +20,7 @@ struct FHitResult;
  \
 	DECLARE_FUNCTION(execOnOverlapBegin) \
 	{ \
+		P_GET_OBJECT(UPrimitiveComponent,Z_Param_OverlappedComponent); \
 		P_GET_OBJECT(AActor,Z_Param_OtherActor); \
 		P_GET_OBJECT(UPrimitiveComponent,Z_Param_OtherComp); \
 		P_GET_PROPERTY(UIntProperty,Z_Param_OtherBodyIndex); \
@@ -27,7 +28,7 @@ struct FHitResult;
 		P_GET_STRUCT_REF(FHitResult,Z_Param_Out_SweepResult); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		P_THIS->OnOverlapBegin(Z_Param_OtherActor,Z_Param_OtherComp,Z_Param_OtherBodyIndex,Z_Param_bFromSweep,Z_Param_Out_SweepResult); \
+		P_THIS->OnOverlapBegin(Z_Param_OverlappedComponent,Z_Param_OtherActor,Z_Param_OtherComp,Z_Param_OtherBodyIndex,Z_Param_bFromSweep,Z_Param_Out_SweepResult); \
 		P_NATIVE_END; \
 	}
 
@@ -36,6 +37,7 @@ struct FHitResult;
  \
 	DECLARE_FUNCTION(execOnOverlapBegin) \
 	{ \
+		P_GET_OBJECT(UPrimitiveComponent,Z_Param_OverlappedComponent); \
 		P_GET_OBJECT(AActor,Z_Param_OtherActor); \
 		P_GET_OBJECT(UPrimitiveComponent,Z_Param_OtherComp); \
 		P_GET_PROPERTY(UIntProperty,Z_Param_OtherBodyIndex); \
@@ -43,7 +45,7 @@ struct FHitResult;
 		P_GET_STRUCT_REF(FHitResult,Z_Param_Out_SweepResult); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		P_THIS->OnOverlapBegin(Z_Param_OtherActor,Z_Param_OtherComp,Z_Param_OtherBodyIndex,Z_Param_bFromSweep,Z_Param_Out_SweepResult); \
+		P_THIS->OnOverlapBegin(Z_Param_OverlappedComponent,Z_Param_OtherActor,Z_Param_OtherComp,Z_Param_OtherBodyIndex,Z_Param_bFromSweep,Z_Param_Out_SweepResult); \
 		P_NATIVE_END; \
 	}
 

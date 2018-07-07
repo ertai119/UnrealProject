@@ -103,7 +103,7 @@ void EmptyLinkFunctionForGeneratedCodeFightMadangCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFightMadangCharacter, 2494528671);
+	IMPLEMENT_CLASS(AFightMadangCharacter, 2356218036);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFightMadangCharacter(Z_Construct_UClass_AFightMadangCharacter, &AFightMadangCharacter::StaticClass, TEXT("/Script/FightMadang"), TEXT("AFightMadangCharacter"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFightMadangCharacter);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
