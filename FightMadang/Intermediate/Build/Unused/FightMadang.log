@@ -1,9 +1,9 @@
 ﻿  Using 'git status' to determine working set for adaptive non-unity build.
+  Compiling game modules for hot reload
   Performing 3 actions (4 in parallel)
   Projectile.cpp
-  [2/3] Link UE4Editor-FightMadang.dll
-  [3/3] Link UE4Editor-FightMadang.lib
-     D:\Project\UnrealProject\FightMadang\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-FightMadang.lib 라이브러리 및 D:\Project\UnrealProject\FightMadang\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-FightMadang.exp 개체를 생성하고 있습니다.
-     D:\Project\UnrealProject\FightMadang\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-FightMadang.suppressed.lib 라이브러리 및 D:\Project\UnrealProject\FightMadang\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-FightMadang.suppressed.exp 개체를 생성하고 있습니다.
-  Deploying FightMadangEditor Win64 Development...
-  Total build time: 3.37 seconds (Local executor: 2.07 seconds)
+C:\UnrealProject\FightMadang\Source\FightMadang\Projectile.cpp(15): error C3867: 'AProjectile::OnOverlapBegin': 비표준 구문입니다. '&'를 사용하여 멤버 포인터를 만드세요.
+C:\UnrealProject\FightMadang\Source\FightMadang\Projectile.cpp(15): error C2672: 'TBaseDynamicMulticastDelegate<FWeakObjectPtr,void,UPrimitiveComponent *,AActor *,UPrimitiveComponent *,int32,bool,const FHitResult &>::__Internal_AddDynamic': 일치하는 오버로드된 함수가 없습니다.
+UnrealBuildTool : error : UBT ERROR: Failed to produce item: C:\UnrealProject\FightMadang\Binaries\Win64\UE4Editor-FightMadang-7325.dll
+  Total build time: 14.19 seconds (Local executor: 0.00 seconds)
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.MakeFile.Targets(44,5): error MSB3075: ""C:\Program Files\Epic Games\UE_4.19\Engine\Build\BatchFiles\Build.bat" FightMadangEditor Win64 Development "C:\UnrealProject\FightMadang\FightMadang.uproject" -WaitMutex -FromMsBuild" 명령이 종료되었습니다(코드: 5). 이 명령을 실행할 권한이 있는지 확인하세요.
