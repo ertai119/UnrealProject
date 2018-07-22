@@ -9,17 +9,31 @@
 /**
  * 
  */
+class UAnimMotage;
+class USphereComponent;
+
 UCLASS()
 class FIGHTMADANG_API ANpc : public APublicCharacter
 {
 	GENERATED_BODY()
 	
-Public:
+public:
     ANpc();
     
     UPROPERTY(VisibleAnyWhere, Category = "Collision")
     USphereComponent* CollisionSphere; 
 	
-	
-	
+    virtual void NotifyActorBeginOverlap(AActor* OtherActor) override;
+    virtual void FaceRotation(FRotator NewControlRotation, float DeltaTime = 0.f) override;
+    
+    void PlayMeleeAnim();
+    void StopMeleeAnim();
+    
+protected:
+    UPROPERTY(EditDefaultsOnly, Category = Pawn)
+    UAnimMontage* MeleeAnim;
+    
+private:
+    FTimerHandle TimerHandler_EnemyStopAttack;
+    bool DuringAttack;
 };

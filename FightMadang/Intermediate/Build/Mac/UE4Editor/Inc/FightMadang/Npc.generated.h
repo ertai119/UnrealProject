@@ -13,9 +13,9 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define FIGHTMADANG_Npc_generated_h
 
-#define FightMadang_Source_FightMadang_Npc_h_15_RPC_WRAPPERS
-#define FightMadang_Source_FightMadang_Npc_h_15_RPC_WRAPPERS_NO_PURE_DECLS
-#define FightMadang_Source_FightMadang_Npc_h_15_INCLASS_NO_PURE_DECLS \
+#define FightMadang_Source_FightMadang_Npc_h_18_RPC_WRAPPERS
+#define FightMadang_Source_FightMadang_Npc_h_18_RPC_WRAPPERS_NO_PURE_DECLS
+#define FightMadang_Source_FightMadang_Npc_h_18_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesANpc(); \
 	friend FIGHTMADANG_API class UClass* Z_Construct_UClass_ANpc(); \
@@ -25,7 +25,7 @@ public: \
 	enum {IsIntrinsic=COMPILED_IN_INTRINSIC};
 
 
-#define FightMadang_Source_FightMadang_Npc_h_15_INCLASS \
+#define FightMadang_Source_FightMadang_Npc_h_18_INCLASS \
 private: \
 	static void StaticRegisterNativesANpc(); \
 	friend FIGHTMADANG_API class UClass* Z_Construct_UClass_ANpc(); \
@@ -35,7 +35,7 @@ public: \
 	enum {IsIntrinsic=COMPILED_IN_INTRINSIC};
 
 
-#define FightMadang_Source_FightMadang_Npc_h_15_STANDARD_CONSTRUCTORS \
+#define FightMadang_Source_FightMadang_Npc_h_18_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API ANpc(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(ANpc) \
@@ -48,7 +48,7 @@ private: \
 public:
 
 
-#define FightMadang_Source_FightMadang_Npc_h_15_ENHANCED_CONSTRUCTORS \
+#define FightMadang_Source_FightMadang_Npc_h_18_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API ANpc(ANpc&&); \
@@ -59,26 +59,29 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ANpc); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(ANpc)
 
 
-#define FightMadang_Source_FightMadang_Npc_h_15_PRIVATE_PROPERTY_OFFSET
-#define FightMadang_Source_FightMadang_Npc_h_12_PROLOG
-#define FightMadang_Source_FightMadang_Npc_h_15_GENERATED_BODY_LEGACY \
+#define FightMadang_Source_FightMadang_Npc_h_18_PRIVATE_PROPERTY_OFFSET \
+	FORCEINLINE static uint32 __PPO__MeleeAnim() { return STRUCT_OFFSET(ANpc, MeleeAnim); }
+
+
+#define FightMadang_Source_FightMadang_Npc_h_15_PROLOG
+#define FightMadang_Source_FightMadang_Npc_h_18_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FightMadang_Source_FightMadang_Npc_h_15_PRIVATE_PROPERTY_OFFSET \
-	FightMadang_Source_FightMadang_Npc_h_15_RPC_WRAPPERS \
-	FightMadang_Source_FightMadang_Npc_h_15_INCLASS \
-	FightMadang_Source_FightMadang_Npc_h_15_STANDARD_CONSTRUCTORS \
+	FightMadang_Source_FightMadang_Npc_h_18_PRIVATE_PROPERTY_OFFSET \
+	FightMadang_Source_FightMadang_Npc_h_18_RPC_WRAPPERS \
+	FightMadang_Source_FightMadang_Npc_h_18_INCLASS \
+	FightMadang_Source_FightMadang_Npc_h_18_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FightMadang_Source_FightMadang_Npc_h_15_GENERATED_BODY \
+#define FightMadang_Source_FightMadang_Npc_h_18_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FightMadang_Source_FightMadang_Npc_h_15_PRIVATE_PROPERTY_OFFSET \
-	FightMadang_Source_FightMadang_Npc_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
-	FightMadang_Source_FightMadang_Npc_h_15_INCLASS_NO_PURE_DECLS \
-	FightMadang_Source_FightMadang_Npc_h_15_ENHANCED_CONSTRUCTORS \
+	FightMadang_Source_FightMadang_Npc_h_18_PRIVATE_PROPERTY_OFFSET \
+	FightMadang_Source_FightMadang_Npc_h_18_RPC_WRAPPERS_NO_PURE_DECLS \
+	FightMadang_Source_FightMadang_Npc_h_18_INCLASS_NO_PURE_DECLS \
+	FightMadang_Source_FightMadang_Npc_h_18_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

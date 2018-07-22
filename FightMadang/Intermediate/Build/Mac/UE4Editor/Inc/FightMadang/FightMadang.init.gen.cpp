@@ -19,8 +19,8 @@ void EmptyLinkFunctionForGeneratedCodeFightMadang_init() {}
 			static const UE4CodeGen_Private::FPackageParams PackageParams = {
 				"/Script/FightMadang",
 				PKG_CompiledIn | 0x00000000,
-				0x5F68BF36,
-				0xC5C0659C,
+				0x8C465284,
+				0x620733E5,
 				nullptr, 0,
 				METADATA_PARAMS(nullptr, 0)
 			};
