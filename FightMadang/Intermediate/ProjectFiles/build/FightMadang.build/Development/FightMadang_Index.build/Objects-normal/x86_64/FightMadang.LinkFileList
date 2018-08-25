@@ -1,8 +1,8 @@
 /Users/leeonehyo/Project/UnrealProject/FightMadang/Intermediate/ProjectFiles/build/FightMadang.build/Development/FightMadang_Index.build/Objects-normal/x86_64/FightMadang.o
-/Users/leeonehyo/Project/UnrealProject/FightMadang/Intermediate/ProjectFiles/build/FightMadang.build/Development/FightMadang_Index.build/Objects-normal/x86_64/FightMadangAIController.o
-/Users/leeonehyo/Project/UnrealProject/FightMadang/Intermediate/ProjectFiles/build/FightMadang.build/Development/FightMadang_Index.build/Objects-normal/x86_64/FightMadangCharacter.o
-/Users/leeonehyo/Project/UnrealProject/FightMadang/Intermediate/ProjectFiles/build/FightMadang.build/Development/FightMadang_Index.build/Objects-normal/x86_64/FightMadangGameMode.o
-/Users/leeonehyo/Project/UnrealProject/FightMadang/Intermediate/ProjectFiles/build/FightMadang.build/Development/FightMadang_Index.build/Objects-normal/x86_64/Npc.o
-/Users/leeonehyo/Project/UnrealProject/FightMadang/Intermediate/ProjectFiles/build/FightMadang.build/Development/FightMadang_Index.build/Objects-normal/x86_64/Projectile.o
-/Users/leeonehyo/Project/UnrealProject/FightMadang/Intermediate/ProjectFiles/build/FightMadang.build/Development/FightMadang_Index.build/Objects-normal/x86_64/PublicCharacter.o
-/Users/leeonehyo/Project/UnrealProject/FightMadang/Intermediate/ProjectFiles/build/FightMadang.build/Development/FightMadang_Index.build/Objects-normal/x86_64/WeaponBase.o
+/Users/leeonehyo/Project/UnrealProject/FightMadang/Intermediate/ProjectFiles/build/FightMadang.build/Development/FightMadang_Index.build/Objects-normal/x86_64/FMDLogicComponent.o
+/Users/leeonehyo/Project/UnrealProject/FightMadang/Intermediate/ProjectFiles/build/FightMadang.build/Development/FightMadang_Index.build/Objects-normal/x86_64/FMDPlayerController.o
+/Users/leeonehyo/Project/UnrealProject/FightMadang/Intermediate/ProjectFiles/build/FightMadang.build/Development/FightMadang_Index.build/Objects-normal/x86_64/FMDGameInstance.o
+/Users/leeonehyo/Project/UnrealProject/FightMadang/Intermediate/ProjectFiles/build/FightMadang.build/Development/FightMadang_Index.build/Objects-normal/x86_64/FMDGameMode.o
+/Users/leeonehyo/Project/UnrealProject/FightMadang/Intermediate/ProjectFiles/build/FightMadang.build/Development/FightMadang_Index.build/Objects-normal/x86_64/FMDGameState.o
+/Users/leeonehyo/Project/UnrealProject/FightMadang/Intermediate/ProjectFiles/build/FightMadang.build/Development/FightMadang_Index.build/Objects-normal/x86_64/FMDMainHUD.o
+/Users/leeonehyo/Project/UnrealProject/FightMadang/Intermediate/ProjectFiles/build/FightMadang.build/Development/FightMadang_Index.build/Objects-normal/x86_64/FMDPlayerState.o

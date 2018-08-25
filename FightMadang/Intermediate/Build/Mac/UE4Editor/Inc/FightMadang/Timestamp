@@ -1,7 +1,7 @@
-/Users/leeonehyo/Project/UnrealProject/FightMadang/Source/FightMadang/FightMadangAIController.h
-/Users/leeonehyo/Project/UnrealProject/FightMadang/Source/FightMadang/FightMadangCharacter.h
-/Users/leeonehyo/Project/UnrealProject/FightMadang/Source/FightMadang/FightMadangGameMode.h
-/Users/leeonehyo/Project/UnrealProject/FightMadang/Source/FightMadang/Npc.h
-/Users/leeonehyo/Project/UnrealProject/FightMadang/Source/FightMadang/Projectile.h
-/Users/leeonehyo/Project/UnrealProject/FightMadang/Source/FightMadang/PublicCharacter.h
-/Users/leeonehyo/Project/UnrealProject/FightMadang/Source/FightMadang/WeaponBase.h
+/Users/leeonehyo/Project/UnrealProject/FightMadang/Source/FightMadang/Component/FMDLogicComponent.h
+/Users/leeonehyo/Project/UnrealProject/FightMadang/Source/FightMadang/Controller/FMDPlayerController.h
+/Users/leeonehyo/Project/UnrealProject/FightMadang/Source/FightMadang/GameInstance/FMDGameInstance.h
+/Users/leeonehyo/Project/UnrealProject/FightMadang/Source/FightMadang/GameMode/FMDGameMode.h
+/Users/leeonehyo/Project/UnrealProject/FightMadang/Source/FightMadang/GameState/FMDGameState.h
+/Users/leeonehyo/Project/UnrealProject/FightMadang/Source/FightMadang/HUD/FMDMainHUD.h
+/Users/leeonehyo/Project/UnrealProject/FightMadang/Source/FightMadang/PlayerState/FMDPlayerState.h
